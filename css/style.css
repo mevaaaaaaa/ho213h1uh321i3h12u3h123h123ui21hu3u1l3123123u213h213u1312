@@ -1,0 +1,255 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+}
+
+.logo{
+    position: absolute;
+    left: 200px;
+    top: -80px;
+    animation: bounce-min 3s ease-in-out infinite;
+}
+
+.game-table{
+    position: absolute;
+    right: 200px;
+    bottom: 40px;
+    width: 1155px;
+    height: 575px;
+    background-image: url('../image/таблица.png');
+}
+
+.webcams-row{
+    position: absolute;
+    top: 0;
+    right: 200px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.webcam{
+    position: relative;
+    width: 383px;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/для\ вебки.png');
+}
+
+.score{
+    position: absolute;
+    bottom: -50px;
+    width: 374px;
+    height: 104px;
+    background-image: url('../image/табличка.png');
+    text-align: center;
+    padding-top: 25px;
+}
+
+.score p{
+    color: #fff;
+    font-size: 39px;
+}
+
+.buttons{
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+    width: 379px;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.supergame{
+    width: 379px;
+    height: 106px;
+}
+
+.koleso{
+    width: 258px;
+    height: 129px;
+}
+
+.buttons .supergame:hover,.koleso:hover{
+    opacity: 0.8;
+}
+
+.game-table{
+    /* position: ; */
+    padding: 79px 116px 30px 108px;
+}
+
+.theme{
+    padding: 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme p{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.question-row{
+    margin-top: 5px;
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-row a img{
+    height: 60px;
+}
+
+.min a img{
+    margin-top: 5px;
+    height: 55px;
+}
+
+.question-row a:hover{
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes bounce-min {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.popup-table{
+    position: absolute;
+    top: 83px;
+    width: 930px;
+    height: 465px;
+    background-image: url('../image/popup.png');
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-text{
+    color: #fff;
+    font-size: 45px;
+    width: 800px;
+    text-align: center;
+}
+
+.question{
+    display: none;
+}
+
+.answer{
+    display: none;
+}
+
+.answerLink{
+    color: #3DD400 !important;
+    font-size: 42px;
+    display: none;
+}
+
+.answerLink:hover{
+    opacity: 0.7;
+}
+
+.koleso-fortun{
+    margin-bottom: 30px;
+    display: none;
+}
+
+.closeBtn{
+    filter: brightness(0) invert(1);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.done{
+    opacity: 0.5;
+}
+
+input#spin {background-color:#9A0000;
+    position: relative;
+    left: 205px;
+    top:290px;
+    display: block;
+    width: 85px;height:85px;
+    z-index:9;
+    border-radius:25em;
+    border: 2px solid black !important;
+    font-size:24px;
+    font-family: 'Oswald', sans-serif !important;
+     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+     display: block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-align: center;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9A0000), color-stop(100%, #9A0000));
+    background: -webkit-linear-gradient(top, #9A0000, #9A0000);
+    background: -moz-linear-gradient(top, #9A0000, #9A0000);
+    background: -o-linear-gradient(top, #9A0000, #9A0000);
+    background: linear-gradient(top,#9A0000, #9A0000);
+    background-color: #9A0000;
+    border-color: #9A0000;
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 40, 50, 0.35);
+  }
+  input#spin:hover, input#spin:focus {
+     background-color: #00a1cb;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9A0000), color-stop(100%, #9A0000));
+    background: -webkit-linear-gradient(top, #9A0000, #9A0000);
+    background: -moz-linear-gradient(top, #9A0000, #9A0000);
+    background: -o-linear-gradient(top, #9A0000, #9A0000);
+    background: linear-gradient(top, #9A0000, #9A0000);
+  }
+  input#spin:active {
+    background: #9A0000;
+  }  
+  
+  @media screen and (max-width: 1140px) {
+    input#spin {background-color:#9A0000;
+    position: relative;
+    left: 120px;
+      top:200px;}
+  
+  }
+  @media screen and (max-width: 500px) {
+  canvas#canvas{ max-width:100%;min-width:320px;}
+     input#spin {background-color:#9A0000;
+    position: relative;
+    
+      top:200px;}
+  
+  }
+  
